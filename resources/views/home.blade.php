@@ -14,7 +14,7 @@
 </style>
 
 <body>
-    <p>Hello World</p>
+    <p>{{$saluto}}</p>
 </body>
 
 </html>
