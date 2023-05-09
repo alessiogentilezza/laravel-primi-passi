@@ -24,8 +24,12 @@
         </nav>
     </header>
     <main>
-        <h3>saluto:</h3>
-        {{$saluto}}
+        <h3>colori:</h3>
+        <ul>
+            @foreach ($colori as $colore)
+            <li>{{$colore}}</li>
+            @endforeach
+        </ul>
     </main>
 </body>
 </html>

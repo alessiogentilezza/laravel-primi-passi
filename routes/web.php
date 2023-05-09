@@ -15,14 +15,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $saluto= 'hello word';
-    $welcome_message = "Benvenuti in Laravel";
-
-    //return view('welcome', compact('class_number', 'welcome_message'));
+    $saluto = 'hello word';
 
     $data = [
         'saluto' => $saluto,
     ];
 
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('colori', function () {
+
+    $data = [
+        'colori' => [
+            'verde',
+            'bianco',
+            'rosso',
+        ]
+    ];
+
+    return view('colors', $data);
+})->name('colors');
